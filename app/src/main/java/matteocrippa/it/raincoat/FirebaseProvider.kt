@@ -20,7 +20,7 @@ class FirebaseProvider(private val context: Context) : ProviderType {
             try {
                 it.invoke(className, context)
             } catch (e: Exception) {
-                Log.e("Raincoat", e.localizedMessage)
+                Log.e("Raincoat 23", e.localizedMessage)
             }
         }
     }
@@ -46,7 +46,7 @@ class FirebaseProvider(private val context: Context) : ProviderType {
         try {
             classFunction.invoke(classInstance, eventName, bundle)
         } catch (e: Exception) {
-            Log.e("Raincoat", e.localizedMessage)
+            Log.e("Raincoat 49", e.localizedMessage)
         }
     }
 }
