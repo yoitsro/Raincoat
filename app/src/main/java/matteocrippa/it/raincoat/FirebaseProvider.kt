@@ -44,6 +44,8 @@ class FirebaseProvider(private val context: Context) : ProviderType {
             }
         }
         try {
+            Log.e("Raincoat 47", classFunction);
+            Log.e("Raincoat 48", classInstance);
             classFunction.invoke(classInstance, eventName, bundle)
         } catch (e: Exception) {
             Log.e("Raincoat 49", e.localizedMessage)
